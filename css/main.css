@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+html{font-size: 62.5%;} /* 1rem -> 10px */
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #000;
+    font-weight: 300;
+    font-family: "Pretendard", sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+
+/* ============== header satrt ============== */
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.header .inner-header{
+    padding: 3.2rem 6.4rem;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+.header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .logo{
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header .gnb-wrap{
+    display: flex;
+    gap: 3.2rem;
+    font-size: 1.8rem;
+}
+
+.header .gnb-wrap a{
+    transition: font-weight .3s, color .3s;
+}
+
+.header .gnb-wrap a:hover{
+    font-weight: 600;
+}
+/* ============== header end ============== */
+
+/* ============== container satrt ============== */
+section h3 {
+    margin-bottom: 64px;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.inner-container{
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 12.4rem 6.4rem;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: #212126;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    opacity: 0.09;
+    mix-blend-mode: overlay;
+
+    background-image: url("../img/bg_noise.png");
+}
+
+.main .inner-container{
+    width: 100%;
+    max-width: 1880px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.main h2{
+    font-size: 6.2rem;
+    font-weight: 800;
+}
+
+.main p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+}
+
+.main .bg1{
+    width: 1570px;
+    height: 1570px;
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+
+     background:
+    radial-gradient(
+      ellipse at 92% 78%,
+      #fff46a 0%,
+      #ffd85b 13%,
+      #d99a50 30%,
+      rgba(116, 76, 57, 0.85) 48%,
+      rgba(33, 33, 38, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at 78% 65%,
+      rgba(184, 126, 78, 0.9) 0%,
+      rgba(95, 65, 57, 0.65) 38%,
+      rgba(33, 33, 38, 0) 68%
+    ),
+    #212126;
+}
+
+.main .bg1:after{
+    content: '';
+    display: block;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background-color: #fff;
+
+    position: absolute;
+    bottom: 100px;
+    right: -150px;
+}
+
+.about .wrapper{
+    display: flex;
+    gap: 112px;
+}
+
+.about .img-wrap{
+    width: 424px;   
+    height: 436px;
+    background-color: #ddd;
+    border-radius: 22px;
+}
+
+.about .txt-wrap>p{
+    margin-bottom: 32px;
+}
+
+.about dl>dt{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about dl>dd{
+    padding: 8px 0;
+}
+
+.about dl>dd + dd{
+    padding: 0;
+}
+
+.skill h3 {
+    text-align: center;
+}
+
+.skill .skill-wrap{
+    display: flex;
+    justify-content: center;
+    gap: 82px;
+}
+
+.skill .skill-wrap li img{
+    height: 8rem;
+}
+
+.work .work-list-wrap{
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.work .work-list-wrap li{
+    flex: 1;
+}
+
+.work .work-list-wrap li:hover .img-wrap{
+    transform: scale(1.1);
+}
+
+.work .work-list-wrap .img-wrap{
+    display: block;
+    width: 100%;
+    height: 312px;
+    background-color: #ddd;
+    border-radius: 22px;
+    transition: all .4s;
+}
+
+.work .work-list-wrap .title{
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.work .work-list-wrap .txt_01{
+    margin-left: 4px;
+    font-size: 14px;
+    color: #676767;
+}
+
+.work .work-list-wrap .txt_02{
+    display: block;
+    font-size: 14px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 420px;
+}
+
+.contact .txt01{
+    font-size: 24px;
+}
+
+.contact .txt02{
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.contact .email{
+    display: inline-block;
+    margin-top: 32px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/* ============== container end ============== */
+
+footer p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #676767;
+}
