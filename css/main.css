@@ -64,6 +64,10 @@ section h3 {
     font-weight: 800;
 }
 
+.container{
+    overflow: hidden;
+}
+
 .inner-container{
     width: 100%;
     max-width: 1480px;
@@ -153,6 +157,35 @@ section h3 {
     bottom: 100px;
     right: -150px;
 }
+
+.main .keywords p{
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    
+    position: absolute;
+    right: 15px;
+    z-index: 99;
+}
+
+.main .keywords .txt01{
+    font-size: 64px;
+    color: #000;
+    bottom: 0;
+}
+
+.main .keywords .txt02{
+    font-size: 40px;
+    right: 720px;
+    bottom: 100px;
+}
+
+.main .keywords .txt03{
+    font-size: 28px;
+    right: 420px;
+    bottom: 400px;
+}
+
 /* ========== main end ========== */
 
 /* ========== about start ========== */
