@@ -36,16 +36,16 @@
             </h1>
             <ul class="gnb-wrap">
               <li>
-                <a href="">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="">Work</a>
+                <a href="#work">Work</a>
               </li>
               <li>
-                <a href="">Project</a>
+                <a href="#project">Project</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
@@ -58,8 +58,15 @@
             <h2>기본에 충실한<br />웹 퍼블리셔 유하늘입니다.</h2>
           </div>
           <div class="bg1"></div>
+          <div class="keywords">
+            <p class="txt01"><span>Meticulous</span></p>
+            <p class="txt02"><span>sincere</span></p>
+            <p class="txt03"><span>responsibility</span></p>
+            <p class="txt04"><span>observation</span></p>
+            <p class="txt05"><span>Problem Solving</span></p>
+          </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="inner-container">
             <h3>About</h3>
             <div class="wrapper">
@@ -89,9 +96,11 @@
                 </dl>
                 <dl>
                   <dt>교육</dt>
-                  <dd>2025.12 - 2026.01 피그마(Figma) UIUX 모바일 웹&앱 디자인</dd>
-                  <dd>2021.09 - 2022.04 스마트기기UXUI웹디자인&웹퍼블리셔
-                    양성과정
+                  <dd>
+                    2025.12 - 2026.01 피그마(Figma) UIUX 모바일 웹&앱 디자인
+                  </dd>
+                  <dd>
+                    2021.09 - 2022.04 스마트기기UXUI웹디자인&웹퍼블리셔 양성과정
                   </dd>
                 </dl>
               </div>
@@ -102,20 +111,31 @@
           <div class="inner-container">
             <h3>보유 Skill</h3>
             <ul class="skill-wrap">
-              <li><img src="img/img_html.svg" alt="html" /></li>
-              <li><img src="img/img_css.svg" alt="css" /></li>
-              <li><img src="img/img_js.svg" alt="javaScript" /></li>
-              <li><img src="img/img_git.svg" alt="git" /></li>
-              <li><img src="img/img_figma.svg" alt="figma" /></li>
-              <li><img src="img/img_photoshop.svg" alt="photoshop" /></li>
-              <li><img src="img/img_illustrator.svg" alt="illustrator" /></li>
+              <li data-txt="html"><img src="img/img_html.svg" alt="html" /></li>
+              <li data-txt="css"><img src="img/img_css.svg" alt="css" /></li>
+              <li data-txt="js">
+                <img src="img/img_js.svg" alt="javaScript" />
+              </li>
+              <li data-txt="git"><img src="img/img_git.svg" alt="git" /></li>
+              <li data-txt="figma">
+                <img src="img/img_figma.svg" alt="figma" />
+              </li>
+              <li data-txt="ps">
+                <img src="img/img_photoshop.svg" alt="photoshop" />
+              </li>
+              <li data-txt="ai">
+                <img src="img/img_illustrator.svg" alt="illustrator" />
+              </li>
             </ul>
             <div class="skill-text">
-              <p>dd</p>
+              <p>
+                웹 표준과 시맨틱 마크업을 기반으로 구조적이고 접근성을 고려한
+                HTML을 작성합니다.
+              </p>
             </div>
           </div>
         </section>
-        <section class="work">
+        <section class="work" id="work">
           <div class="inner-container">
             <h3>Work</h3>
             <ul class="work-list-wrap">
@@ -146,12 +166,12 @@
             </ul>
           </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
           <div class="inner-container">
             <p class="txt01">
               궁금한 점이 있으시다면 아래의 메일로 연락주세요.
             </p>
-            <p class="txt02">yoojoo22@naver.com</p>
+            <p class="txt02">llilli_0@naver.com</p>
             <a href="#" class="email">메일 보내기 ></a>
           </div>
         </section>
@@ -162,5 +182,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
