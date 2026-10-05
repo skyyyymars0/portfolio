@@ -23,6 +23,7 @@ body {
 
 .header.on{
     background-color: #03030369;
+    backdrop-filter: blur(10px);
 }
 
 .header .inner-header{
@@ -158,32 +159,110 @@ section h3 {
     right: -150px;
 }
 
-.main .keywords p{
-    color: #fff;
-    text-align: center;
-    font-size: 28px;
-    
+/* JS synchronizes these coordinates with the actual .bg1::after center. */
+.main .keywords {
     position: absolute;
-    right: 15px;
-    z-index: 99;
+    left: var(--orbit-x, calc(100% - 200px));
+    top: var(--orbit-y, calc(150% - 450px));
+    width: 0;
+    height: 0;
+    transform: scaleY(.65);
+    z-index: 3;
+    pointer-events: none;
 }
 
-.main .keywords .txt01{
-    font-size: 64px;
-    color: #000;
-    bottom: 0;
+.main .keywords::before,
+.main .keywords::after {
+    content: '';
+    position: absolute;
+    width: calc(var(--orbit-size, 700px) * 2.1);
+    height: calc(var(--orbit-size, 700px) * 2.1);
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 229, 185, .12);
+    border-radius: 50%;
 }
 
-.main .keywords .txt02{
-    font-size: 40px;
-    right: 720px;
-    bottom: 100px;
+.main .keywords::after {
+    width: calc(var(--orbit-size, 700px) * 2.7);
+    height: calc(var(--orbit-size, 700px) * 2.7);
+    border-color: rgba(255, 229, 185, .07);
 }
 
-.main .keywords .txt03{
+.main .keywords > p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    color: #fff;
     font-size: 28px;
-    right: 420px;
-    bottom: 400px;
+    animation: keyword-orbit var(--duration) linear infinite;
+    animation-delay: var(--delay);
+}
+
+.main .keywords > p > span {
+    display: block;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    text-shadow: 0 2px 14px rgba(33, 33, 38, .3);
+    animation: keyword-upright var(--duration) linear infinite;
+    animation-delay: var(--delay);
+}
+
+.main .keywords .txt01 {
+    --radius: calc(var(--orbit-size, 700px) * .72);
+    --duration: 32s;
+    --delay: -16s;
+    font-size: clamp(28px, 4vw, 64px);
+}
+.main .keywords .txt02 {
+    --radius: calc(var(--orbit-size, 700px) * .9);
+    --duration: 40s;
+    --delay: -25s;
+    font-size: clamp(22px, 2.6vw, 40px);
+}
+.main .keywords .txt03 { --radius: calc(var(--orbit-size, 700px) * 1.05); --duration: 48s; --delay: -35s; }
+.main .keywords .txt04 { --radius: calc(var(--orbit-size, 700px) * 1.2); --duration: 56s; --delay: -21s; }
+.main .keywords .txt05 { --radius: calc(var(--orbit-size, 700px) * 1.35); --duration: 64s; --delay: -29s; }
+
+@keyframes keyword-orbit {
+    from { transform: rotate(0deg) translateX(var(--radius)); }
+    to { transform: rotate(360deg) translateX(var(--radius)); }
+}
+
+@keyframes keyword-upright {
+    from { transform: rotate(0deg) scaleY(1.5384615385) translate(-50%, -50%); }
+    to { transform: rotate(-360deg) scaleY(1.5384615385) translate(-50%, -50%); }
+}
+@media (max-width: 767px) {
+    .main {
+        --planet-x: 72%;
+        --planet-y: 75%;
+        --planet-size: clamp(200px, 46vw, 320px);
+        min-height: 640px;
+    }
+    .main .inner-container {
+        justify-content: flex-start;
+        padding: 15rem 2.4rem 0;
+    }
+    .main .bg1::after {
+        width: var(--planet-size);
+        height: var(--planet-size);
+        left: var(--planet-x);
+        top: var(--planet-y);
+        right: auto;
+        bottom: auto;
+        transform: translate(-50%, -50%);
+    }
+    .main h2 { font-size: 3.2rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .main .keywords > p,
+    .main .keywords > p > span { animation-play-state: paused; }
 }
 
 /* ========== main end ========== */
