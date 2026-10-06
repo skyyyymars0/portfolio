@@ -492,6 +492,7 @@ footer p {
 
   .skill .skill-wrap {
     gap: 16px;
+    flex-wrap: wrap;
   }
 
   .work .work-list-wrap .img-wrap {
