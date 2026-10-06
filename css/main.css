@@ -368,10 +368,17 @@ section h3 {
 .work .work-list-wrap .img-wrap{
     display: block;
     width: 100%;
-    height: 312px;
+    height: 280px;
     background-color: #ddd;
     border-radius: 22px;
     transition: all .4s;
+    overflow: hidden;
+}
+
+.work .work-list-wrap .img-wrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .work .work-list-wrap .title{
@@ -416,6 +423,10 @@ section h3 {
 
 .work .more-btn:hover{
     font-weight: 600;
+}
+
+.work .more-btn i{
+    margin-left: 2px;
 }
 /* ========== work end ========== */
 
