@@ -273,8 +273,14 @@ section h3 {
 .about .img-wrap {
   width: 424px;
   height: 436px;
-  background-color: #ddd;
+  /* background-color: #ddd; */
   border-radius: 22px;
+}
+
+.about .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .about .txt-wrap > p {
