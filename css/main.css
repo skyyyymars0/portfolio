@@ -47,6 +47,7 @@ body {
 
 .header .gnb-wrap {
   display: flex;
+  align-items: center;
   gap: 3.2rem;
   font-size: 1.8rem;
 }
@@ -64,8 +65,8 @@ body {
 
 /* ============== container satrt ============== */
 section h3 {
-  margin-bottom: 64px;
-  font-size: 48px;
+  margin-bottom: 6.4rem;
+  font-size: 4.8rem;
   font-weight: 800;
 }
 
@@ -75,7 +76,7 @@ section h3 {
 
 .inner-container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 148rem;
   margin: 0 auto;
   padding: 12.4rem 6.4rem;
 }
@@ -104,7 +105,7 @@ section h3 {
 
 .main .inner-container {
   width: 100%;
-  max-width: 1880px;
+  max-width: 188rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -124,8 +125,8 @@ section h3 {
 }
 
 .main .bg1 {
-  width: 1570px;
-  height: 1570px;
+  width: 157rem;
+  height: 157rem;
   position: absolute;
   bottom: -50%;
   right: 0;
@@ -151,16 +152,16 @@ section h3 {
 .main .bg1:after {
   content: "";
   display: block;
-  width: 700px;
-  height: 700px;
+  width: 70rem;
+  height: 70rem;
   border-radius: 50%;
   background-color: #fff;
   filter: blur(2px);
   opacity: 0.9;
 
   position: absolute;
-  bottom: 100px;
-  right: -150px;
+  bottom: 10rem;
+  right: -15rem;
 }
 
 /* JS synchronizes these coordinates with the actual .bg1::after center. */
@@ -267,14 +268,14 @@ section h3 {
 /* ========== about start ========== */
 .about .wrapper {
   display: flex;
-  gap: 112px;
+  gap: 11.2rem;
 }
 
 .about .img-wrap {
-  width: 424px;
-  height: 436px;
+  width: 42.4rem;
+  height: 43.6rem;
   /* background-color: #ddd; */
-  border-radius: 22px;
+  border-radius: 2.2rem;
 }
 
 .about .img-wrap img {
@@ -284,16 +285,16 @@ section h3 {
 }
 
 .about .txt-wrap > p {
-  margin-bottom: 32px;
+  margin-bottom: 3.2rem;
 }
 
 .about dl > dt {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .about dl > dd {
-  padding: 8px 0;
+  padding: 0.8rem 0;
 }
 
 .about dl > dd + dd {
@@ -309,7 +310,7 @@ section h3 {
 .skill .skill-wrap {
   display: flex;
   justify-content: center;
-  gap: 82px;
+  gap: 8.2rem;
 }
 
 .skill .skill-wrap li img {
@@ -344,12 +345,12 @@ section h3 {
 
 .skill .skill-text {
   width: 100%;
-  height: 120px;
-  line-height: 120px;
+  height: 12rem;
+  line-height: 12rem;
   background-color: #ffffff;
   border: 2px dashed #ff9f5f;
   border-radius: 22px;
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .skill .skill-text p {
@@ -363,11 +364,11 @@ section h3 {
 .work .work-list-wrap {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
+  gap: 3.6rem;
 }
 
 .work .work-list-wrap + .work-list-wrap {
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
 
 .work .work-list-wrap li {
@@ -381,7 +382,7 @@ section h3 {
 .work .work-list-wrap .img-wrap {
   display: block;
   width: 100%;
-  height: 280px;
+  height: 28rem;
   background-color: #ddd;
   border-radius: 22px;
   transition: all 0.4s;
@@ -396,30 +397,30 @@ section h3 {
 
 .work .work-list-wrap .title {
   display: inline-block;
-  margin-top: 16px;
-  font-size: 24px;
+  margin-top: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 800;
 }
 
 .work .work-list-wrap .txt_01 {
   display: block;
-  margin-left: 4px;
-  font-size: 13px;
+  margin-left: 0.4rem;
+  font-size: 1.3rem;
   color: #676767;
 }
 
 .work .work-list-wrap .txt_01:after {
   content: "";
   display: block;
-  width: 80px;
+  width: 8rem;
   height: 1px;
-  margin-top: 14px;
+  margin-top: 1.4rem;
   background-color: #676767;
 }
 
 .work .work-list-wrap .txt_02 {
   display: block;
-  margin-top: 12px;
+  margin-top: 1.2rem;
 }
 
 .work .btn-wrap {
@@ -428,7 +429,7 @@ section h3 {
 
 .work .more-btn {
   display: inline-block;
-  margin-top: 124px;
+  margin-top: 12.4rem;
   text-align: center;
   transition: all 0.3s;
   border-bottom: 1px solid #676767;
@@ -439,7 +440,7 @@ section h3 {
 }
 
 .work .more-btn i {
-  margin-left: 2px;
+  margin-left: 0.2rem;
 }
 /* ========== work end ========== */
 
@@ -449,24 +450,24 @@ section h3 {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 420px;
+  height: 42rem;
   background-color: #000;
   color: #fff;
 }
 
 .contact .txt01 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .contact .txt02 {
-  font-size: 64px;
+  font-size: 6.4rem;
   font-weight: 800;
 }
 
 .contact .email {
   display: inline-block;
-  margin-top: 32px;
-  font-size: 14px;
+  margin-top: 3.2rem;
+  font-size: 1.4rem;
   text-decoration: underline;
 }
 /* ========== contact end ========== */
@@ -488,40 +489,38 @@ footer p {
 
   .about .wrapper {
     flex-direction: column;
-    gap: 42px;
+    gap: 4.2rem;
   }
 
   .about .img-wrap {
     width: 100%;
-    height: 340px;
+    height: 34rem;
   }
 
   .skill .skill-wrap {
-    gap: 16px;
+    gap: 1.6rem;
     flex-wrap: wrap;
   }
 
   .work .work-list-wrap .img-wrap {
-    height: 280px;
+    height: 28rem;
   }
 
   .work .work-list-wrap {
     display: block;
   }
   .work .work-list-wrap li + li {
-    margin-top: 24px;
+    margin-top: 2.4rem;
   }
 
   .contact .txt01 {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .contact .txt02 {
-    font-size: 32px;
+    font-size: 3.2rem;
   }
-}
 
-@media (max-width: 1080px) {
   .main {
     --planet-x: 72%;
     --planet-y: 75%;
@@ -551,5 +550,17 @@ footer p {
   .main .keywords > p,
   .main .keywords > p > span {
     animation-play-state: paused;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .inner-header {
+    padding: 2.2rem 2.4rem;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+  }
+
+  .header .gnb-wrap {
+    gap: 1.8rem;
   }
 }
